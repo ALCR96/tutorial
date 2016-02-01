@@ -13,6 +13,12 @@ void setup() {
 void reset() {
   moonX=width/2;
   moonY=40;
+  ///cordinates to move creature
+  x=width/2;
+  y=height/2;
+  //random speed the creature goes
+  dx= random(2,6);
+  dy= random(-3,+3);
 
 }
 
@@ -84,7 +90,7 @@ void scene() {
      moonX=  moonX + 1; //move the moon 1=slow:2,3=fast
   
   x=  x + dx;
-  //y=  y + dy;
+  y=  y + dy;
  }
  void show() {
    //creature
